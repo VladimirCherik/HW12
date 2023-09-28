@@ -7,6 +7,7 @@ public class Buzz extends Thread{
     private int i;
     private List<Object> result ;
 
+
     public Buzz(int i, List<Object> result) {
         this.i = i;
         this.result = result;

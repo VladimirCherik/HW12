@@ -2,15 +2,22 @@ package org.example.HW12;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.Executor;
+import java.util.concurrent.Executors;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.ScheduledFuture;
 
 public class Task2WithoutThreads {
     public static void main(String[] args) {
 
         new Work().toDo();
     }
+
     private static class Work{
 
         List<String> string = new ArrayList<>();
+
         void toDo (){
 
             for (int i = 1; i <= 15; i++) {
@@ -28,5 +35,4 @@ public class Task2WithoutThreads {
             System.out.println(string);
         }
     }
-
 }
